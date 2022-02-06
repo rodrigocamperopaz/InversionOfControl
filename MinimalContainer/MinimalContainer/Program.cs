@@ -52,7 +52,7 @@ class Program
 
 		//using the container
 		Console.WriteLine(
-			container.Create<LoginController>().EmailSender.Port
+			container.Create<LoginController>()?.EmailSender?.Port
 		);
 
 		Console.ReadKey();
